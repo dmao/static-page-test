@@ -10,6 +10,46 @@
 	<meta property="fb:pages" content="106856409344350" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<link rel='dns-prefetch' href='//s0.wp.com' />
+	<link rel='dns-prefetch' href='//ak.sail-horizon.com' />
+	<link rel='dns-prefetch' href='//r-login.wordpress.com' />
+	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+	<link rel='dns-prefetch' href='//ovp.iris.tv' />
+	<link rel='dns-prefetch' href='//static.streamhub.tv' />
+	<link rel='dns-prefetch' href='//w3.cdn.anvato.net' />
+	<link rel='dns-prefetch' href='//cdn.vuukle.com' />
+	<link rel='dns-prefetch' href='//bossip.wordpress.com' />
+	<link rel='dns-prefetch' href='//bossip.files.wordpress.com' />
+	<link rel='dns-prefetch' href='//s3.amazonaws.com' />
+	<!-- TODO Adding some preconnect -->
+	<link rel="preconnect" href="//inputs.alooma.com">
+	<link rel="preconnect" href="//websdk.moengage.com">
+	<link rel="preconnect" href="//trending.interactiveone.com">
+	<link rel="preconnect" href="//bis.vidazoo.com">
+	<link rel="preconnect" href="//stats.streamhub.io">
+	<link rel="preconnect" href="//colossusssp.com">
+	<link rel="preconnect" href="//btlr.sharethrough.com">
+	<link rel="preconnect" href="//cdn.stickyadstv.com">
+	<link rel="preconnect" href="//api.sail-personalize.com">
+	<link rel="preconnect" href="//i0.wp.com">
+	<link rel="preconnect" href="//static.vidazoo.com">
+	<link rel="preconnect" href="//bossip.com">
+	<link rel="preconnect" href="//www.facebook.com">
+	<link rel="preconnect" href="//static.ads-twitter.com">
+	<link rel="preconnect" href="//connect.facebook.net">
+	<link rel="preconnect" href="//htlb.casalemedia.com">
+	<link rel="preconnect" href="//bossip.files.wordpress.com">
+	<link rel="preconnect" href="//www.google-analytics.com">
+	<link rel="preconnect" href="//www.youtube.com">
+	<link rel="preconnect" href="//stats.g.doubleclick.net">
+	<link rel="preconnect" href="//googleads.g.doubleclick.net">
+	<link rel="preconnect" href="//r2---sn-8vq54voxn25po-5b2e.gvt1.com">
+	<link rel="preconnect" href="//static.doubleclick.net">
+	<link rel="preconnect" href="//securepubads.g.doubleclick.net">
+	<link rel="preconnect" href="//sync.colossusssp.com">
+	<link rel="preconnect" href="//adservice.google.com">
+	<link rel="preconnect" href="//csi.gstatic.com">
+
 	<link rel="shortcut icon" href="https://s0.wp.com/wp-content/themes/vip/bossip4/images/favicon.ico" />
 	<link rel="alternate" type="application/rss+xml" title="Bossip RSS Feed" href="http://feeds.feedburner.com/bossiprss" />
 
@@ -34,8 +74,9 @@
 	<!-- TODO defer the script -->
 	<script defer src="//js-sec.indexww.com/ht/p/186774-159866622015434.js"></script>
 		
-	<script>mmgQ=[];</script>	
-	<script>
+	<script>mmgQ=[];</script>
+	<!-- TODO delay the script	 -->
+	<!-- <script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		ga( 'create', "UA-427730-2", 'auto' );
 				ga( 'set', {"dimension9":"BHM Digital","dimension7":"post","dimension28":"Arts & Entertainment","dimension29":"TV & Video","dimension30":"TV Shows & Programs","dimension2":"alexbossip","dimension3":1940846,"dimension4":"08-12-2020","dimension5":"Wed","dimension6":"13:06:43","dimension10":"gallery","dimension1":"Arts &amp; Entertainment","dimension25":"Unidentified Credit Exists","dimension15":"ve_wibbitz","dimension27":"twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com"} );
@@ -77,18 +118,57 @@
 		};
 
 		ga( 'send', 'pageview', pageData );
+	</script> -->
+	<script>
+    window.addEventListener( 'load', function() {
+			setTimeout( function() {
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			ga( 'create', "UA-427730-2", 'auto' );
+					ga( 'set', {"dimension9":"BHM Digital","dimension7":"post","dimension28":"Arts & Entertainment","dimension29":"TV & Video","dimension30":"TV Shows & Programs","dimension2":"alexbossip","dimension3":1940846,"dimension4":"08-12-2020","dimension5":"Wed","dimension6":"13:06:43","dimension10":"gallery","dimension1":"Arts &amp; Entertainment","dimension25":"Unidentified Credit Exists","dimension15":"ve_wibbitz","dimension27":"twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com, twitter.com"} );
+			ga( 'set', 'dimension8', document.location.href );
+
+			ga( function( tracker ) {
+				var pad = function( num ) {
+					var norm = Math.abs( Math.floor( num ) );
+					return ( norm < 10 ? '0' : '' ) + norm;
+				};
+
+				var now = new Date();
+				var tzo = -now.getTimezoneOffset();
+				var dif = ( tzo >= 0 ) ? '+' : '-';
+				var timestamp = [
+					now.getFullYear(), '-', pad( now.getMonth() + 1 ), '-', pad( now.getDate() ),
+					'T', pad( now.getHours() ), ':', pad( now.getMinutes() ), ':', pad( now.getSeconds() ), '.', pad( now.getMilliseconds() ),
+					dif, pad( tzo / 60 ), ':', pad( tzo % 60 )
+				].join( '' );
+
+				var clientId = tracker.get( 'clientId' );
+				var sessionId = now.getTime() + '.' + Math.random().toString(36).substring(5);
+
+				ga( 'set', {
+					'dimension11': clientId,
+					'dimension12': sessionId,
+					'dimension13': timestamp
+				} );
+			} );
+
+			var pageData = {
+				'page':          window.location.pathname,
+				'title':         ione_tag_manager.ga.title,
+				'contentGroup1': location.hostname,
+				'contentGroup2': ione_tag_manager.ga.categories,
+				'contentGroup3': ione_tag_manager.ga.post_type,
+				'contentGroup4': ione_tag_manager.ga.tags,
+				'contentGroup5': ione_tag_manager.ga.author
+			};
+
+			ga( 'send', 'pageview', pageData );
+			}, 1000 );
+    } );
 	</script>
-	<link rel='dns-prefetch' href='//s0.wp.com' />
-	<link rel='dns-prefetch' href='//ak.sail-horizon.com' />
-	<link rel='dns-prefetch' href='//r-login.wordpress.com' />
-	<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
-	<link rel='dns-prefetch' href='//ovp.iris.tv' />
-	<link rel='dns-prefetch' href='//static.streamhub.tv' />
-	<link rel='dns-prefetch' href='//w3.cdn.anvato.net' />
-	<link rel='dns-prefetch' href='//cdn.vuukle.com' />
-	<link rel='dns-prefetch' href='//bossip.wordpress.com' />
-	<link rel='dns-prefetch' href='//bossip.files.wordpress.com' />
-	<link rel='dns-prefetch' href='//s3.amazonaws.com' />
+
+	
+	
 	<link rel="alternate" type="application/rss+xml" title="Bossip &raquo; Believe The Hype: Black Critics Are BUZZING Over HBO&#8217;s Monster-Mashed Mind-Blower &#8220;Lovecraft Country&#8221; Ahead Of Its Sunday&nbsp;Premiere Comments Feed" href="https://bossip.com/1940846/lovecraft-country-early-reactions/feed/" />
 	<script type="text/javascript">
 		/* <![CDATA[ */
@@ -105,11 +185,12 @@
 		}
 		/* ]]> */
 	</script>
-	<script type="text/javascript">
+	<!-- Remove emoji -->
+	<!-- <script type="text/javascript">
 		window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1596548281h&ver=5.5-wpcom-484371"}};
 		!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
-	</script>
-	<style type="text/css">
+	</script> -->
+	<!-- <style type="text/css">
 		img.wp-smiley,
 		img.emoji {
 			display: inline !important;
@@ -122,7 +203,7 @@
 			background: none !important;
 			padding: 0 !important;
 		}
-	</style>
+	</style> -->
 	<!-- set inline as it's small enough -->
 	<!-- <link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJydzd0OgjAMBeAXcjQqQrwwPgs/FWu2bqEF3NtrRAPRaIh3bXO+HhiCqTwrsoLrTLBdQywwhMo7I44sxrctqURW8IVR3aAK3CPP2She9YPoGR0K9BRgajShaAVtnI2/YOlFKKRw8h3XhZLnR+14ThzxEiwaLS4JTq/NaBYWzB1x8yessSzalzy6w3q3T7N8u8nyyw0iNag7?cssminify=yes' type='text/css' media='all' /> -->
 	<style>
@@ -270,7 +351,9 @@
 	</script>
 
 	<link rel="canonical" href="https://bossip.com/1940846/lovecraft-country-early-reactions/" />
-	<link rel="next" href="https://bossip.com/1940846/lovecraft-country-early-reactions/2/" />	<script data-obct type="text/javascript">
+	<link rel="next" href="https://bossip.com/1940846/lovecraft-country-early-reactions/2/" />	
+	<!-- TODO delay the script -->
+	<!-- <script data-obct type="text/javascript">
 		/** DO NOT MODIFY THIS CODE**/
 		!function( _window, _document ) {
 			var OB_ADV_ID = '00c12932f2b69a1563013f8129410bd01f';
@@ -292,7 +375,35 @@
 			script.parentNode.insertBefore( tag, script );
 		}( window, document );
 		obApi( 'track', 'PAGE_VIEW' );
+	</script> -->
+	<script>
+    window.addEventListener( 'load', function() {
+			setTimeout( function() {
+				!function( _window, _document ) {
+						var OB_ADV_ID = '00c12932f2b69a1563013f8129410bd01f';
+						if ( _window.obApi ) {
+							return;
+						}
+						var api = _window.obApi = function () {
+							api.dispatch ? api.dispatch.apply( api, arguments ) : api.queue.push( arguments );
+						};
+						api.version = '1.0';
+						api.loaded = true;
+						api.marketerId = OB_ADV_ID;
+						api.queue = [];
+						var tag = _document.createElement( 'script' );
+						tag.async = true;
+						tag.src = '//amplify.outbrain.com/cp/obtp.js';
+						tag.type = 'text/javascript';
+						var script = _document.getElementsByTagName( 'script' )[ 0 ];
+						script.parentNode.insertBefore( tag, script );
+					}( window, document );
+					obApi( 'track', 'PAGE_VIEW' );
+			}, 2000 );
+    } );
 	</script>
+
+	
 	<!-- TODO delay the script -->
 	<!-- <script type="text/javascript">
 		try {
@@ -375,7 +486,7 @@
 					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
 					s.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
 					el.parentNode.insertBefore(s, el);
-			}, 1500 );
+			}, 3000 );
     } );
 	</script>
 
@@ -998,7 +1109,7 @@
 					e.src = h + "//" + u + "/p.js";
 					r.appendChild(e);
 				})("script", "parsely", document);
-			}, 1000 );
+			}, 2000 );
     } );
 	</script>
 	<!-- END Parse.ly Include: Standard -->
@@ -1117,7 +1228,7 @@
 					s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
 					el.parentNode.insertBefore(s, el);
 				})();
-			}, 1000 );
+			}, 2000 );
 		} );
 	</script>
 	<noscript><img  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-lazy-load data-src="https://b.scorecardresearch.com/p?c1=2&c2=6035391&c4=" /></noscript>
@@ -1231,9 +1342,18 @@
 	<script defer type='text/javascript' src='https://s0.wp.com/_static/??-eJyNjDEOgCAQwD4knmhQF+NbEIgBBczdod+XzdWtadLCcwmTE7vEEIu4zrL7RKBt9ElsGiFqYoeVRL4doreOPtcGauD/gVGbg2q0xkWqvlNynKchvP7LMFE='></script>
 	<!-- TODO defer the script -->
 	<script defer src='https://www.civicscience.com/jspoll/4/civicscience-widget.js' id='civic-science-widget-js'></script>
-	<script id='ione3-wibbitz-js-extra'>
+	<!-- TODO delay this script -->
+	<!-- <script id='ione3-wibbitz-js-extra'>
 		var ione3Wibbitz = {"url":"\/\/cdn4.wibbitz.com\/bossip\/embed.js","platform":"desktop"};
+	</script> -->
+	<script>
+    window.addEventListener( 'load', function() {
+			setTimeout( function() {
+				var ione3Wibbitz = {"url":"\/\/cdn4.wibbitz.com\/bossip\/embed.js","platform":"desktop"};
+			}, 2000 );
+    } );
 	</script>
+
 	<!-- TODO defer the script -->
 	<script defer type='text/javascript' src='https://s0.wp.com/_static/??-eJydjFEKgzAQBS/UdFEb/So9ihiz2JVkN5jVgKdvWjxBvwbmPQZKMrOwIivoGyNmOCiBk5wpPYCEsQPiOey+TlH8Hiq/2py4LYwKF02QyeN2X/MN/ooWco70NIX8UrO/13jJWn3FZ2MHa/t2aPr1AyB1Q/s='></script>
 	<script type="text/javascript">
