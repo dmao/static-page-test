@@ -112,7 +112,7 @@ var mmgAdvertisingData = {"is_home":"","is_category":"","is_single":"","is_page"
 <script src='//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-48929' type='text/javascript' async></script><script id='tag-js-extra'>
 var tag = {"options":{"customerId":"b4f6725fe313e8b74446849fcf957e33"}};
 </script>
-<script type='text/javascript' src='https://s0.wp.com/wp-content/themes/vip/plugins/sailthru-3.3/js/tag.js?m=1586556741h'></script>
+
 <script src='https://r-login.wordpress.com/remote-login.php?m=1585848049h&#038;action=js&#038;host=bossip.com&#038;id=568005&#038;t=1600890342&#038;back=https%3A%2F%2Fbossip.com%2Ftag%2Fbabies-categories%2F&#038;ver=1526988078' async defer onload='check_remote_login()' id='r-login-js'></script>
 <script id='r-login-js-after'>
 function check_remote_login() {
@@ -124,7 +124,10 @@ function check_remote_login() {
 	}
 }
 </script>
-<script type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/themes/vip/bossip4/ione3/assets/js/helpers.js,/wp-content/themes/vip/plugins/sailthru-3.3/js/widget.subscribe.js?m=1591133648j'></script>
+
+
+
+
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bossip.wordpress.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s0.wp.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress.com" />
@@ -1140,6 +1143,29 @@ if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
 }
 </script>	<script>
 		jQuery(document).foundation();
+	</script>
+	// TODO delay script
+	// <script type='text/javascript' src='https://s0.wp.com/wp-content/themes/vip/plugins/sailthru-3.3/js/tag.js?m=1586556741h'></script>
+	<script>
+		window.addEventListener( 'load', function() {
+			setTimeout( function() {
+					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+					s.src = 'https://s0.wp.com/wp-content/themes/vip/plugins/sailthru-3.3/js/tag.js?m=1586556741h';
+					el.parentNode.insertBefore(s, el);
+			}, 2000 );
+		} );
+	</script>
+
+	// TODO delay script
+	// <script type='text/javascript' src='https://s0.wp.com/_static/??/wp-content/themes/vip/bossip4/ione3/assets/js/helpers.js,/wp-content/themes/vip/plugins/sailthru-3.3/js/widget.subscribe.js?m=1591133648j'></script>
+	<script>
+		window.addEventListener( 'load', function() {
+			setTimeout( function() {
+					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+					s.src = 'https://s0.wp.com/_static/??/wp-content/themes/vip/bossip4/ione3/assets/js/helpers.js,/wp-content/themes/vip/plugins/sailthru-3.3/js/widget.subscribe.js?m=1591133648j';
+					el.parentNode.insertBefore(s, el);
+			}, 2000 );
+		} );
 	</script>
 </div>
 
