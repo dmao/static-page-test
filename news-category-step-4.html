@@ -129,7 +129,16 @@
 	<!-- jQuery -->
   <script type='text/javascript' src='https://s0.wp.com/_static/??-eJxtjt0KwjAMhV/ILpRN0QvxWfYTa8rS1iXd8O2N4o0iBA6c8/ER2IqjNM51QoFod6+4PD7RRNmBAWNOiklfe8mijCJ9wD8r54FmdFVwMSCpqa/5l9MbmgFWKjBkESod2AfAHFw/rbgoCaXw1n1XDVMy2YXPfn/yvm0P3TE+AYwXRv8='></script>
 	<!-- TODO defer thhe script -->
-  <script defer src='//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-484371' type='text/javascript' ></script>
+	<!--<script defer src='//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-484371' type='text/javascript' ></script>-->
+	<script>
+		window.addEventListener( 'load', function() {
+				setTimeout( function() {
+						var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+						s.src = '//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-48929';
+						el.parentNode.insertBefore(s, el);
+				}, 2500 );
+		} );
+	</script>
   
   <script id='tag-js-extra'>
     var tag = {"options":{"customerId":"b4f6725fe313e8b74446849fcf957e33"}};
@@ -328,7 +337,7 @@
             var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
             s.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
             el.parentNode.insertBefore(s, el);
-        }, 2000 );
+        }, 2500 );
     } );
 	</script>
 
@@ -747,8 +756,8 @@
 </div>
 		</section>
 		<div id="civsci-id-1318763321" data-civicscience-widget="fe8bfb76-aa2a-1fc4-596d-be1c632f5024"></div>
-		<!-- TODO defer the script -->
-		<script defer type="text/javascript" async src="https://www.civicscience.com/jspoll/4/civicscience-widget.js"></script>
+		<!-- TODO load the script only for desktop -->
+		<!-- <script defer type="text/javascript" async src="https://www.civicscience.com/jspoll/4/civicscience-widget.js"></script> -->
 
 		<section class="widget widget_bhm_ad"><!-- Ad Tag: ad-tag-_4052_bossip_desktop_5f3cdbf38d65a_middlebox -->
 <div class="mmg_ad_identifier" data-adtag="ad_id_6"></div><div id="ad_id_6" class="mmg-ad gpt-ad" data-adunit="/4052/bossip/desktop" data-adsizes='{"desktop":"[[300, 600], [300,250]]","mobile":"[]"}' data-adoutofpage='' data-targeting='{"pos":"2"}' data-skip-lazyload='true'></div>
@@ -1000,7 +1009,7 @@
 					e.src = h + "//" + u + "/p.js";
 					r.appendChild(e);
 				})("script", "parsely", document);
-			}, 1400 );
+			}, 1700 );
 		} );
 	</script>
 
