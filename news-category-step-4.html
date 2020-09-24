@@ -24,8 +24,17 @@
 	
   <meta name="google-site-verification" content="aXMHIPRvllF-EjF0NAn-U9PvSOviqRfhNv5Sr3ut-2I" />
   <meta name="msvalidate.01" content="53791BFB2F16AE07772DD203616AB86A" />
-  <!-- TODO change async by defer -->
-  <script defer src="//js-sec.indexww.com/ht/p/186774-159866622015434.js"></script>
+  <!-- TODO delay -->
+	<!-- <script defer src="//js-sec.indexww.com/ht/p/186774-159866622015434.js"></script> -->
+	<script>
+		window.addEventListener( 'load', function() {
+				setTimeout( function() {
+						var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+						s.src = '//js-sec.indexww.com/ht/p/186774-159866622015434.js';
+						el.parentNode.insertBefore(s, el);
+				}, 2800 );
+		} );
+	</script>
     
   <script>mmgQ=[];</script>	
   
