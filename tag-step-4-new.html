@@ -180,8 +180,9 @@ function check_remote_login() {
 
 	<!-- END wp-parsely Plugin Version 1.13.0 -->
 			<meta property="fb:pages" content="106856409344350" />
-							<meta property="ia:markup_url_dev" content="https://bossip.com/1955930/preciousness-malika-haqqs-son-ace-is-6-months-old-and-hes-o-t-s-spitting-image/?ia_markup=1" />
-						<script type="text/javascript">
+			<meta property="ia:markup_url_dev" content="https://bossip.com/1955930/preciousness-malika-haqqs-son-ace-is-6-months-old-and-hes-o-t-s-spitting-image/?ia_markup=1" />
+			<!-- TODO delay script  -->
+			<!-- <script type="text/javascript">
 			(function(i,s,o,g,r,a,m,n){
 				i['moengage_object']=r;t={}; q = function(f){return function(){(i['moengage_q']=i['moengage_q']||[]).push({f:f,a:arguments});};};
 				f = ['track_event','add_user_attribute','add_first_name','add_last_name','add_email','add_mobile',
@@ -195,9 +196,28 @@ function check_remote_login() {
 				app_id:"7TC8WD68J4YEGSM0JE8KZVYM",
 				debug_logs: 0
 			});
+		</script>-->
+		<script>
+			window.addEventListener( 'load', function() {
+				setTimeout( function() {
+					(function(i,s,o,g,r,a,m,n){
+						i['moengage_object']=r;t={}; q = function(f){return function(){(i['moengage_q']=i['moengage_q']||[]).push({f:f,a:arguments});};};
+						f = ['track_event','add_user_attribute','add_first_name','add_last_name','add_email','add_mobile',
+							'add_user_name','add_gender','add_birthday','destroy_session','add_unique_user_id','moe_events','call_web_push','track'];
+						for(k in f){t[f[k]]=q(f[k]);}
+						a=s.createElement(o);m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+						i['moe']=i['moe'] || function(){n=arguments[0];return t;}; a.onload=function(){if(n){i[r] = moe(n);}};
+					})(window,document,'script','https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js','Moengage');
+
+					Moengage = moe({
+						app_id:"7TC8WD68J4YEGSM0JE8KZVYM",
+						debug_logs: 0
+					});
+				}, 1800 );
+			} );
 		</script>
 			<!-- Google Tag Manager -->
-	<script>
+			<!--<script>
 		(function(w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({
@@ -211,6 +231,25 @@ function check_remote_login() {
 			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 			f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', "GTM-K4NGNSQ" );
+	</script>-->
+	<script>
+		window.addEventListener( 'load', function() {
+			setTimeout( function() {
+				(function(w, d, s, l, i) {
+					w[l] = w[l] || [];
+					w[l].push({
+						'gtm.start': new Date().getTime(),
+						event: 'gtm.js'
+					});
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != 'dataLayer' ? '&l=' + l : '';
+					j.async = true;
+					j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+					f.parentNode.insertBefore(j, f);
+				})(window, document, 'script', 'dataLayer', "GTM-K4NGNSQ" );
+			}, 2500 );
+			} );
 	</script>
 	<!-- End Google Tag Manager -->
 	<script type="text/javascript">var sailthru_vars = {"ajaxurl":"https:\/\/bossip.wordpress.com\/wp-admin\/admin-ajax.php"}</script>		<script type="text/javascript">
