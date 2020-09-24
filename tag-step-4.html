@@ -1083,7 +1083,17 @@
 <!-- Ad head -->
 <!-- Moguldom Custom GPT Tag Implementation 2.0 -->
 <!-- Before GPT -->
-
+		// TODO delay script
+		// <script async="async" defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.jsss"></script>
+		<script>
+			window.addEventListener( 'load', function() {
+					setTimeout( function() {
+							var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+							s.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+							el.parentNode.insertBefore(s, el);
+					}, 2500 );
+			} );
+		</script>
 		<script type="text/javascript">
 		var googletag = googletag || {};
 		googletag.cmd = googletag.cmd || [];
@@ -1273,7 +1283,7 @@ if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
 					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
 					s.src = 'https://s0.wp.com/wp-content/themes/vip/plugins/sailthru-3.3/js/tag.js?m=1586556741h';
 					el.parentNode.insertBefore(s, el);
-			}, 2000 );
+			}, 3000 );
 		} );
 	</script>
 
