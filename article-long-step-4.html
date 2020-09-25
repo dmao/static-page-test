@@ -130,8 +130,8 @@
 	<script id='tag-js-extra'>
 	var tag = {"options":{"customerId":"b4f6725fe313e8b74446849fcf957e33"}};
 	</script>
-	<!-- TODO when this script is defer, sailthru is not defined -->
-	<script type='text/javascript' src='https://s0.wp.com/wp-content/themes/vip/plugins/sailthru-3.3/js/tag.js?m=1586556741h'></script>
+	<!-- TODO when this script is defer, sailthru is not defined, set to async -->
+	<script async type='text/javascript' src='https://s0.wp.com/wp-content/themes/vip/plugins/sailthru-3.3/js/tag.js?m=1586556741h'></script>
 	
 	<script src='https://r-login.wordpress.com/remote-login.php?m=1585848049h&#038;action=js&#038;host=bossip.com&#038;id=568005&#038;t=1600884831&#038;back=https%3A%2F%2Fbossip.com%2F1940926%2Fhold-the-racism-heres-why-jodie-turner-smith-birthed-her-baby-at-home%2F&#038;ver=1526988078'  defer onload='check_remote_login()' id='r-login-js'></script>
 	<script id='r-login-js-after'>
@@ -219,8 +219,9 @@
 			});
 	</script>
 	<link rel="canonical" href="https://bossip.com/1940926/hold-the-racism-heres-why-jodie-turner-smith-birthed-her-baby-at-home/" />
+	/* TODO delay  */
 	<!-- Google Tag Manager -->
-	<script>
+	/* <script>
 		(function(w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({
@@ -234,6 +235,25 @@
 			j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
 			f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', "GTM-K4NGNSQ" );
+	</script> */
+	<script>
+		window.addEventListener( 'load', function() {
+			setTimeout( function() {
+				(function(w, d, s, l, i) {
+					w[l] = w[l] || [];
+					w[l].push({
+						'gtm.start': new Date().getTime(),
+						event: 'gtm.js'
+					});
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != 'dataLayer' ? '&l=' + l : '';
+					j.async = true;
+					j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+					f.parentNode.insertBefore(j, f);
+				})(window, document, 'script', 'dataLayer', "GTM-K4NGNSQ" );
+			}, 2500 );
+		} );
 	</script>
 	<!-- End Google Tag Manager -->
 	<script type="text/javascript">var sailthru_vars = {"ajaxurl":"https:\/\/bossip.wordpress.com\/wp-admin\/admin-ajax.php"}</script>		<script type="text/javascript">
@@ -741,7 +761,8 @@
 <div id="parsely-root" style="display: none">
 	<div id="parsely-cfg" data-parsely-site="bossip.com"></div>
 </div>
-<script data-cfasync="false">
+<!-- TODO delay script -->
+<!-- <script data-cfasync="false">
 	(function (s, p, d) {
 		var h = d.location.protocol, i = p + "-" + s,
 			e = d.getElementById(i), r = d.getElementById(p + "-root"),
@@ -755,6 +776,25 @@
 		e.src = h + "//" + u + "/p.js";
 		r.appendChild(e);
 	})("script", "parsely", document);
+</script> -->
+<script>
+  window.addEventListener( 'load', function() {
+    setTimeout( function() {
+			(function (s, p, d) {
+				var h = d.location.protocol, i = p + "-" + s,
+					e = d.getElementById(i), r = d.getElementById(p + "-root"),
+					u = h === "https:" ? "d1z2jf7jlzjs58.cloudfront.net"
+						: "static." + p + ".com";
+				if (e) return;
+				e = d.createElement(s);
+				e.id = i;
+				e.async = true;
+				e.setAttribute('data-cfasync', 'false');
+				e.src = h + "//" + u + "/p.js";
+				r.appendChild(e);
+			})("script", "parsely", document);
+    }, 2000 );
+  } );
 </script>
 
 <!-- END Parse.ly Include: Standard -->
@@ -896,7 +936,17 @@
 <!-- Ad head -->
 <!-- Moguldom Custom GPT Tag Implementation 2.0 -->
 <!-- Before GPT -->
-		<script async="async" defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+		<!-- TODO delay ad -->
+		<!-- <script async="async" defer src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> -->
+		<script>
+			window.addEventListener( 'load', function() {
+				setTimeout( function() {
+					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+					s.src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js';
+					el.parentNode.insertBefore(s, el);
+				}, 1000 );
+			} );
+		</script>
 		<script type="text/javascript">
 		var googletag = googletag || {};
 		googletag.cmd = googletag.cmd || [];
