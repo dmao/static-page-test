@@ -735,12 +735,24 @@
 </div>
 <div style="position:relative; left:0; height:0; overflow:hidden;">
 		<!-- Facebook Pixel Code -->
-	<script>
+		<!-- TODO delay script -->
+	<!-- <script>
 		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.defer=1;t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
 		b.body.appendChild(t);
 		}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
 		fbq('init', '554175888070395');
 		fbq('track', "PageView");
+	</script> -->
+	<script>
+		window.addEventListener( 'load', function() {
+			setTimeout( function() {
+				!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.defer=1;t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+				b.body.appendChild(t);
+				}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
+				fbq('init', '554175888070395');
+				fbq('track', "PageView");
+			}, 3000 );
+		} );
 	</script>
 	<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=554175888070395&ev=PageView&noscript=1" /></noscript>
 	<!-- End Facebook Pixel Code -->
