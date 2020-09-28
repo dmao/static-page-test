@@ -660,15 +660,22 @@ wpcom_img_zoomer.init();
 
 var VUUKLE_CONFIG = ione3Vuukle.config;
 
-(function() {
-    var d = document
-      , s = d.createElement('script');
+// (function() {
+//     var d = document
+//       , s = d.createElement('script');
 
+//     s.src = 'https://cdn.vuukle.com/platform.js';
+//     s.async = 1;
+//     (d.head || d.body).appendChild(s);
+// }
+// )();
+window.addEventListener( 'load', function() {
+  setTimeout( function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
     s.src = 'https://cdn.vuukle.com/platform.js';
-    s.async = 1;
-    (d.head || d.body).appendChild(s);
-}
-)();
+    el.parentNode.insertBefore(s, el);
+  }, 2700 );
+} );
 ;/*! ione3 - v0.1.0
  * https://interactiveone.com
  * Copyright (c) 2020; * Licensed GPLv2+ */
