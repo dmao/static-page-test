@@ -854,7 +854,17 @@
       <script id='ione3-wibbitz-js-extra'>
         var ione3Wibbitz = {"url":"\/\/cdn4.wibbitz.com\/newsone\/embed.js","platform":"desktop"};
       </script>
-      <script type='text/javascript' src='https://s0.wp.com/_static/??-eJyVjFsOQDAQAC+k1iPlSxxF0A0r7VZYmji9EhfwNclkMhBWNXoWZAGZ0eEOJ61AnrEE4tEeJirnzWEjH60u3CZGgY/K+t7gli57Ar9mgYaB5FKBzBR3b9V9Mt5a1+S61roqqqxYbgNRPg8='></script>
+      <!-- TODO delay -->
+      <!-- <script type='text/javascript' src='https://s0.wp.com/_static/??-eJyVjFsOQDAQAC+k1iPlSxxF0A0r7VZYmji9EhfwNclkMhBWNXoWZAGZ0eEOJ61AnrEE4tEeJirnzWEjH60u3CZGgY/K+t7gli57Ar9mgYaB5FKBzBR3b9V9Mt5a1+S61roqqqxYbgNRPg8='></script> -->
+      <script>
+        window.addEventListener( 'load', function() {
+          setTimeout( function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = 'https://s0.wp.com/_static/??-eJyVjFsOQDAQAC+k1iPlSxxF0A0r7VZYmji9EhfwNclkMhBWNXoWZAGZ0eEOJ61AnrEE4tEeJirnzWEjH60u3CZGgY/K+t7gli57Ar9mgYaB5FKBzBR3b9V9Mt5a1+S61roqqqxYbgNRPg8=';
+            el.parentNode.insertBefore(s, el);
+          }, 3000 );
+        } );
+      </script>
       <script type="text/javascript">
         // <![CDATA[
         (function() {
