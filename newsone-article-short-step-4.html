@@ -753,7 +753,8 @@
       <div id="parsely-root" style="display: none">
         <div id="parsely-cfg" data-parsely-site="newsone.com"></div>
       </div>
-      <script data-cfasync="false">
+      <!-- TODO delay -->
+      <!-- <script data-cfasync="false">
         (function (s, p, d) {
         	var h = d.location.protocol, i = p + "-" + s,
         		e = d.getElementById(i), r = d.getElementById(p + "-root"),
@@ -767,6 +768,25 @@
         	e.src = h + "//" + u + "/p.js";
         	r.appendChild(e);
         })("script", "parsely", document);
+      </script> -->
+      <script>
+          window.addEventListener( 'load', function() {
+            setTimeout( function() {
+              (function (s, p, d) {
+                var h = d.location.protocol, i = p + "-" + s,
+                  e = d.getElementById(i), r = d.getElementById(p + "-root"),
+                  u = h === "https:" ? "d1z2jf7jlzjs58.cloudfront.net"
+                    : "static." + p + ".com";
+                if (e) return;
+                e = d.createElement(s);
+                e.id = i;
+                e.async = true;
+                e.setAttribute('data-cfasync', 'false');
+                e.src = h + "//" + u + "/p.js";
+                r.appendChild(e);
+              })("script", "parsely", document);
+            }, 2000 );
+          } );
       </script>
       <!-- END Parse.ly Include: Standard -->
       <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552e89b24000d651" async defer></script>	
@@ -800,11 +820,16 @@
         var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
       </script>
       <script type='text/javascript' src='https://s0.wp.com/_static/??-eJyNkOtOwzAMhV+INB1oDH4gHmVyE8Oc5kbjdJSnx920aRIb60/7nPP5ovdZmRQZI2tXtMWRDObvxpUHfSHxDgMWPVLWlCI+aYrGVystsIGiHmvtPYo9BLGXGXVs3QVBKXgMHOpGaKfMeYaIHZi+E8MtXcrK5P+RrxGWbrUtCIPZXYuGqrKvnxTFjZxliN7KZP0BBruUeoWhQ7s0xXtixkExBfQU/7zvIveo5nXdYWsFEfzEZMrdy05xDz+T8gmsapvNjHFfFYepKSnCsOhHN0nnhiDew9vquW1f1y+b1dr9Av475Dk='></script>
-      <script src='https://ovp.iris.tv/libs/adaptive/v2/iris.adaptive.js?ver=5.5-wpcom-48929' id='iris_anvato-js'></script>
-      <script src='https://ovp.iris.tv/libs/context/iris-context.min.js?ver=5.5-wpcom-48929' id='iris_contextual-js'></script>
-      <script type='text/javascript' src='https://s0.wp.com/wp-content/themes/vip/ione3/includes/modules/video-everywhere/iris-integration.js?m=1591295145h'></script>
-      <script src='https://static.streamhub.tv/anvato/plugin.js?ver=5.5-wpcom-48929' id='streamhub-js'></script>
-      <script src='https://w3.cdn.anvato.net/player/prod/v3/scripts/anvload.js?ver=5.5-wpcom-48929' id='anvato-js'></script>
+      <!-- TODO defer -->
+      <script defer src='https://ovp.iris.tv/libs/adaptive/v2/iris.adaptive.js?ver=5.5-wpcom-48929' id='iris_anvato-js'></script>
+      <!-- TODO defer --> 
+      <scriptdefer src='https://ovp.iris.tv/libs/context/iris-context.min.js?ver=5.5-wpcom-48929' id='iris_contextual-js'></script>
+      <!-- TODO defer -->
+      <script defer type='text/javascript' src='https://s0.wp.com/wp-content/themes/vip/ione3/includes/modules/video-everywhere/iris-integration.js?m=1591295145h'></script>
+      <!-- TODO defer -->
+      <script defer src='https://static.streamhub.tv/anvato/plugin.js?ver=5.5-wpcom-48929' id='streamhub-js'></script>
+      <!-- TODO defer --> 
+      <scriptdefer src='https://w3.cdn.anvato.net/player/prod/v3/scripts/anvload.js?ver=5.5-wpcom-48929' id='anvato-js'></script>
       <script id='video_everywhere_bootstrap-js-extra'>
         var videoBridge = {"anv_id":"4952033","token":"lhtfDcAbYhTkk4k2MkIGRb0XaHxI9xKHgq_HCFR5Qrw~Mn4wfg","postId":"3992235","categories":["good-news"],"tags":["amazon-studios","entertainment","film","lizzo","newsletter","production","television"],"is_video_post":"","options":{"anvato_access_key":"BaDWlAqpo5M8Yua8MwF20ug3OPOQKkMV","stream_hub_analytics_id":"newsone-bbe53","streamhub_player_title":"NewsOne Player","iris_client_token":"SSKIC9H4LRUK747","suggestion_num":4,"autoplay":true,"ad_tag":"https:\/\/pubads.g.doubleclick.net\/gampad\/ads?sz=602x400&iu=\/4052\/no.home\/videopreroll&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=2482016&vid=ANV_ANV_[[VIDEO_ID]]","startTimeout":22,"loadVideoTimeout":20,"vastLoadTimeout":8}};
       </script>
