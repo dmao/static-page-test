@@ -2572,8 +2572,13 @@ ioneViewTimeTracker.prototype = {
                     pubID: this.config.aps.pubId,
                     adServer: 'googletag'
                 });
-
-                ioneAds.loadScript(this.config.aps.libUrl, true);
+                // TODO delay
+                window.addEventListener( 'load', function() {
+                    setTimeout( function() {
+                        ioneAds.loadScript(this.config.aps.libUrl, true);
+                    }, 2200 );
+                  } );
+                //ioneAds.loadScript(this.config.aps.libUrl, true);
             }
 
             if (window.ione_tag_manager && window.ione_tag_manager.sonobi_lib) {
