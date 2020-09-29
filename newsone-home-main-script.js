@@ -2590,7 +2590,7 @@ ioneViewTimeTracker.prototype = {
             window.addEventListener( 'load', function() {
               setTimeout( function() {
                 ioneAds.loadScript('//www.googletagservices.com/tag/js/gpt.js', true);
-              }, 2000 );
+              }, 2400 );
             } );
 
             // Ensure all ad slots have been parsed before sending anything to DFP.
