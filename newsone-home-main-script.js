@@ -2583,7 +2583,12 @@ ioneViewTimeTracker.prototype = {
 
             if (window.ione_tag_manager && window.ione_tag_manager.indexexchange_lib) {
                 // Index supports async, nice!
-                ioneAds.loadScript(window.ione_tag_manager.indexexchange_lib, true);
+                window.addEventListener( 'load', function() {
+                    setTimeout( function() {
+                    ioneAds.loadScript(window.ione_tag_manager.indexexchange_lib, true);
+                    }, 2300 );
+                  } );
+                //ioneAds.loadScript(window.ione_tag_manager.indexexchange_lib, true);
             }
             // TODO delay 
             // ioneAds.loadScript('//www.googletagservices.com/tag/js/gpt.js', true);
