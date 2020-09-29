@@ -6335,6 +6335,7 @@ ione.Router = Backbone.Router.extend({
             firstScript.parentNode.insertBefore(newScript, firstScript);
         }
     };
+    
 
     window.fbAsyncInit = function() {
         FB.init({
@@ -6349,8 +6350,13 @@ ione.Router = Backbone.Router.extend({
     if ('undefined' !== typeof infiniteScroll) {
         document.body.addEventListener('post-load', facebookEmbed);
     }
-
-    facebookEmbed();
+    // TODO delay facebook
+    //facebookEmbed();
+    window.addEventListener( 'load', function() {
+      setTimeout( function() {
+        facebookEmbed();
+      }, 2200 );
+    } );
 }
 )(this);
 // ;!(function(d, s, id) {
