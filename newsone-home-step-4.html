@@ -99,8 +99,18 @@
       <![endif]-->
       <link rel='preload' as='style' onload='this.onload=null;this.rel="stylesheet"' id='all-css-4-1' href='https://s0.wp.com/_static/??-eJx9jtEOwiAMRX9I1iga54PxWwA7VtfBsoLTvxeNxhmjb/cmPacXpkG5GBKGBH1WA2dPQWCio8ck0BiHNsZOMXUlXEDSlbFyIguYkanFHgXONADFgBpeHjHEqR2z0pWGQj3FlWQrbiT7rZqN8BgVR2dScX4U1bCh8R86ouXoS/SPr+/6a3q7Bs/RGr4fHPr9clNvd7XWq/p0A4ida6Y=?cssminify=yes' type='text/css' media='all' />
       <script type='text/javascript' src='https://s0.wp.com/_static/??/wp-includes/js/jquery/jquery.js,/wp-content/js/postmessage.js,/wp-content/js/mobile-useragent-info.js?m=1558356653j'></script>
-      <!-- TODO defer -->
-      <script defer src='//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-48929' type='text/javascript' ></script><script id='tag-js-extra'>
+      <!-- TODO delay -->
+      <!-- <script defer src='//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-48929' type='text/javascript' ></script> -->
+      <script>
+        window.addEventListener( 'load', function() {
+          setTimeout( function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = '//ak.sail-horizon.com/spm/spm.v1.min.js?ver=5.5-wpcom-48929';
+            el.parentNode.insertBefore(s, el);
+          }, 2100 );
+        } );
+      </script>
+      <script id='tag-js-extra'>
         var tag = {"options":{"customerId":"26b945b836292ff33b6be1daedb10f0a"}};
       </script>
       <!-- TODO delay  -->
